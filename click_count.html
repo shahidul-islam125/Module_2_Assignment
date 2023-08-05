@@ -1,0 +1,29 @@
+<!--
+Title: Assignment Module-02
+Description: (2)Click Counter
+Author: SHAHIDUL ISLAM
+Date: 05 Aug 23
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+</head>
+<body>
+    <h1>Click Counter</h1>
+    <p>Increment the value each time the button is clicked.</p>
+    <p id="demo">0</p>
+    <button onclick="toCount()">Click</button>
+
+    <script>
+        let count = 0;
+        function toCount(){
+            count++
+            document.getElementById("demo").innerHTML = count;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+Title: Assignment Module-02
+Description: (3)Image Switcher
+Author: SHAHIDUL ISLAM
+Date: 05 Aug 23
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+    <h1>Image Switcher</h1>
+    <img id = 'imgId' src="./Image/Image.jpeg" height="200" width="200" alt="Not found"><br>
+    <button id="btn1">Image1</button>
+    <button id="btn2">Image2</button>
+
+    <script>
+       let img = document.querySelector("#imgId")
+       let btn1 = document.querySelector("#btn1")
+       let btn2 = document.querySelector("#btn2")
+
+       btn1.addEventListener('click', () => {
+        img.src = './Image/Image1.jpg'
+       })
+
+       btn2.addEventListener('click', () => {
+        img.src = './Image/Image2.jpg'
+       })
+    </script>
+</body>
+</html>
